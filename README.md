@@ -1,2 +1,2 @@
-# lexidex
-AI-powered tool to enhance understanding of public domain works of literature
+# lexdex
+A nice reader for your browser for the top 100 books on Project Gutenberg.
