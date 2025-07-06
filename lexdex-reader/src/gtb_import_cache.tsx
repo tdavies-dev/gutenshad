@@ -161,8 +161,19 @@ async function loadBookFromCache(bookKey: string): Promise<LoadedBook | null> {
   }
 }
 
+async function updateManifest() {
+  const manifest = Object.keys(BOOKS).map(key => ({
+    key,
+    filename: `${key}.json`,
+    ...BOOKS[key]
+  }));
+  
+  await fs.writeFile('./books/manifest.json', JSON.stringify(manifest, null, 2));
+  console.log('updated books manifest');
+}
+
 // clean demo function that caches all books
-async function demo() {
+async function cache() {
   try {
     console.log('starting book caching process...');
     
@@ -179,14 +190,13 @@ async function demo() {
         console.log(`cached ${book.title} to file.`);
       }
     }
-    
+    await updateManifest();
     console.log('\nall books processed successfully!');
   } catch (error) {
     console.error('demo failed:', error);
   }
 }
 
-// uncomment to run:
-demo();
+cache();
 
 export { BOOKS, loadBookFromCache, type BookInfo, type Chapter, type LoadedBook };

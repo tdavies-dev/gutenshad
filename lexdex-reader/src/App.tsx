@@ -16,11 +16,47 @@ interface LoadedBook {
 }
 
 const styles = {
-  container: {
-    display: 'flex',
+  app: {
     minHeight: '100vh',
     fontFamily: 'system-ui, -apple-system, sans-serif',
-    backgroundColor: '#f8fafc'
+    backgroundColor: '#f8fafc',
+  },
+  header: {
+    backgroundColor: 'white',
+    borderBottom: '1px solid #e2e8f0',
+    padding: '20px 24px',
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)',
+  },
+  headerContent: {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+  },
+  headerTitle: {
+    fontSize: '28px',
+    fontWeight: '300',
+    color: '#1e293b',
+    margin: 0,
+    letterSpacing: '-0.025em',
+  },
+  headerSlash: {
+    fontSize: '28px',
+    color: '#94a3b8',
+    fontWeight: '200',
+  },
+  headerSubtitle: {
+    fontSize: '16px',
+    color: '#64748b',
+    fontWeight: '400',
+    margin: 0,
+  },
+  container: {
+    display: 'flex',
+    minHeight: 'calc(100vh - 81px)',
+    fontFamily: 'system-ui, -apple-system, sans-serif',
+    backgroundColor: '#f8fafc',
   },
   sidebar: {
     width: '280px',
@@ -28,38 +64,38 @@ const styles = {
     borderRight: '1px solid #e2e8f0',
     display: 'flex',
     flexDirection: 'column' as const,
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)'
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.1)',
   },
   sidebarHeader: {
     padding: '16px',
-    borderBottom: '1px solid #f1f5f9'
+    borderBottom: '1px solid #f1f5f9',
   },
   bookTitle: {
     display: 'flex',
     alignItems: 'center',
     gap: '8px',
-    marginBottom: '8px'
+    marginBottom: '8px',
   },
   titleText: {
     fontSize: '16px',
     fontWeight: '500',
     color: '#1e293b',
-    margin: 0
+    margin: 0,
   },
   authorText: {
     fontSize: '12px',
     color: '#64748b',
-    margin: 0
+    margin: 0,
   },
   chapterCount: {
     fontSize: '11px',
     color: '#94a3b8',
-    marginTop: '4px'
+    marginTop: '4px',
   },
   chapterList: {
     flex: 1,
     overflowY: 'auto' as const,
-    padding: '12px'
+    padding: '12px',
   },
   chapterButton: {
     width: '100%',
@@ -71,23 +107,23 @@ const styles = {
     fontSize: '12px',
     cursor: 'pointer',
     transition: 'all 0.2s',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
   },
   chapterButtonActive: {
     backgroundColor: '#dbeafe',
     color: '#1d4ed8',
     fontWeight: '500',
-    borderLeft: '2px solid #3b82f6'
+    borderLeft: '2px solid #3b82f6',
   },
   chapterButtonInactive: {
     color: '#64748b',
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
   },
   navControls: {
     padding: '12px',
     borderTop: '1px solid #f1f5f9',
     display: 'flex',
-    gap: '8px'
+    gap: '8px',
   },
   navButton: {
     flex: 1,
@@ -101,63 +137,63 @@ const styles = {
     borderRadius: '4px',
     backgroundColor: 'white',
     cursor: 'pointer',
-    transition: 'all 0.2s'
+    transition: 'all 0.2s',
   },
   navButtonDisabled: {
     opacity: 0.4,
-    cursor: 'not-allowed'
+    cursor: 'not-allowed',
   },
   mainContent: {
     flex: 1,
     display: 'flex',
-    flexDirection: 'column' as const
+    flexDirection: 'column' as const,
   },
   chapterHeader: {
     backgroundColor: 'white',
     borderBottom: '1px solid #f1f5f9',
     padding: '16px 24px',
-    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
+    boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)',
   },
   chapterTitle: {
     fontSize: '24px',
     fontFamily: '"Crimson Text", Georgia, serif',
     color: '#1e293b',
-    margin: '0 0 4px 0'
+    margin: '0 0 4px 0',
   },
   chapterInfo: {
     fontSize: '14px',
-    color: '#64748b'
+    color: '#64748b',
   },
   contentArea: {
     flex: 1,
     overflowY: 'auto' as const,
-    backgroundColor: 'white'
+    backgroundColor: 'white',
   },
   contentInner: {
     maxWidth: '700px',
     margin: '0 auto',
-    padding: '32px 24px'
+    padding: '32px 24px',
   },
   textContent: {
     fontFamily: '"Crimson Text", Georgia, serif',
     fontSize: '18px',
     lineHeight: '1.7',
-    color: '#374151'
+    color: '#374151',
   },
   paragraph: {
-    marginBottom: '24px'
+    marginBottom: '24px',
   },
   bottomNav: {
     backgroundColor: 'white',
     borderTop: '1px solid #f1f5f9',
-    padding: '12px 24px'
+    padding: '12px 24px',
   },
   bottomNavInner: {
     maxWidth: '700px',
     margin: '0 auto',
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   bottomNavButton: {
     display: 'flex',
@@ -169,11 +205,11 @@ const styles = {
     backgroundColor: 'transparent',
     border: 'none',
     cursor: 'pointer',
-    transition: 'color 0.2s'
+    transition: 'color 0.2s',
   },
   pageInfo: {
     fontSize: '14px',
-    color: '#94a3b8'
+    color: '#94a3b8',
   },
   loading: {
     display: 'flex',
@@ -181,7 +217,7 @@ const styles = {
     justifyContent: 'center',
     minHeight: '100vh',
     backgroundColor: '#f8fafc',
-    textAlign: 'center' as const
+    textAlign: 'center' as const,
   },
   error: {
     display: 'flex',
@@ -190,21 +226,55 @@ const styles = {
     minHeight: '100vh',
     backgroundColor: '#f8fafc',
     textAlign: 'center' as const,
-    color: '#dc2626'
-  }
+    color: '#dc2626',
+  },
 };
 
 export default function ChapterDisplay() {
+  const [availableBooks, setAvailableBooks] = useState<{key: string, title: string, author: string}[]>([]);
   const [book, setBook] = useState<LoadedBook | null>(null);
   const [currentChapter, setCurrentChapter] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedBook, setSelectedBook] = useState<string>('pride_prejudice');
+
+  async function scanAvailableBooks() {
+    try {
+      const response = await fetch('/books/manifest.json');
+      if (response.ok) {
+        const manifest = await response.json();
+        const available = [];
+        
+        // verify each book actually exists
+        for (const book of manifest) {
+          try {
+            const bookResponse = await fetch(`/books/${book.filename}`);
+            if (bookResponse.ok) {
+              available.push(book);
+            }
+          } catch {
+            console.log(`${book.key} listed in manifest but file missing`);
+          }
+        }
+        
+        setAvailableBooks(available);
+      }
+    } catch (err) {
+      console.error('failed to load book manifest:', err);
+      // fallback to empty list or show error
+    }
+  }
 
   useEffect(() => {
-    async function loadBook() {
+    scanAvailableBooks();
+  }, []);
+  
+
+  useEffect(() => {
+    async function loadBook(bookName: string) {
       try {
         setLoading(true);
-        const response = await fetch('/books/pride_prejudice.json');
+        const response = await fetch(`/books/${bookName}.json`);
         if (!response.ok) {
           throw new Error(`Failed to fetch book: ${response.status}`);
         }
@@ -214,21 +284,23 @@ export default function ChapterDisplay() {
         setError(null);
       } catch (err) {
         console.error('Failed to load book:', err);
-        setError('Failed to load Pride and Prejudice. Make sure the book is cached in books/pride_prejudice.json');
+        setError('Failed to load book.');
       } finally {
         setLoading(false);
       }
     }
 
-    loadBook();
-  }, []);
+    if (selectedBook) {
+      loadBook(selectedBook);
+    }
+  }, [selectedBook]);
 
   if (loading) {
     return (
       <div style={styles.loading}>
         <div>
           <Book size={48} color="#94a3b8" style={{ margin: '0 auto 16px' }} />
-          <p>Loading Pride and Prejudice...</p>
+          <p>Loading...</p>
         </div>
       </div>
     );
@@ -241,7 +313,7 @@ export default function ChapterDisplay() {
           <Book size={48} color="#dc2626" style={{ margin: '0 auto 16px' }} />
           <p>{error}</p>
           <p style={{ fontSize: '14px', marginTop: '8px' }}>
-            Run your caching script first to generate the book files.
+            Error finding book files.
           </p>
         </div>
       </div>
@@ -271,123 +343,144 @@ export default function ChapterDisplay() {
   };
 
   return (
-    <div style={styles.container}>
-      {/* Sidebar */}
-      <div style={styles.sidebar}>
-        {/* Header */}
-        <div style={styles.sidebarHeader}>
-          <div style={styles.bookTitle}>
-            <Book size={20} color="#64748b" />
-            <h1 style={styles.titleText}>{book.title}</h1>
-          </div>
-          <p style={styles.authorText}>by {book.author}</p>
-          <p style={styles.chapterCount}>{book.totalChapters} chapters</p>
-        </div>
-
-        {/* Chapter list */}
-        <div style={styles.chapterList}>
-          {book.chapters.map((chapter, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentChapter(index)}
-              style={{
-                ...styles.chapterButton,
-                ...(currentChapter === index ? styles.chapterButtonActive : styles.chapterButtonInactive)
-              }}
-              onMouseEnter={(e) => {
-                if (currentChapter !== index) {
-                  e.currentTarget.style.backgroundColor = '#f8fafc';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (currentChapter !== index) {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                }
-              }}
-            >
-              {chapter.title}
-            </button>
-          ))}
-        </div>
-
-        {/* Navigation controls */}
-        <div style={styles.navControls}>
-          <button
-            onClick={goToPrevChapter}
-            disabled={currentChapter === 0}
-            style={{
-              ...styles.navButton,
-              ...(currentChapter === 0 ? styles.navButtonDisabled : {})
-            }}
+    <div style={styles.app}>
+      {/* Header */}
+      <header style={styles.header}>
+        <div style={styles.headerContent}>
+          <h1 style={styles.headerTitle}>Lexidex</h1>
+          <span style={styles.headerSlash}>/</span>
+          <select
+            onChange={(e) => setSelectedBook(e.target.value)}
+            value={selectedBook}
+            style={{ marginLeft: '16px', padding: '4px 8px', fontSize: '16px' }}
           >
-            <ChevronLeft size={12} />
-            Prev
-          </button>
-          <button
-            onClick={goToNextChapter}
-            disabled={currentChapter === book.chapters.length - 1}
-            style={{
-              ...styles.navButton,
-              ...(currentChapter === book.chapters.length - 1 ? styles.navButtonDisabled : {})
-            }}
-          >
-            Next
-            <ChevronRight size={12} />
-          </button>
+            {availableBooks.map((book) => (
+              <option key={book.key} value={book.key}>
+                {book.title} // {book.author}
+              </option>
+            ))}
+          </select>
         </div>
-      </div>
+      </header>
 
-      {/* Main content */}
-      <div style={styles.mainContent}>
-        {/* Chapter header */}
-        <div style={styles.chapterHeader}>
-          <h1 style={styles.chapterTitle}>
-            {book.chapters[currentChapter]?.title}
-          </h1>
-          <p style={styles.chapterInfo}>
-            Chapter {currentChapter + 1} of {book.totalChapters}
-          </p>
-        </div>
-
-        {/* Chapter content */}
-        <div style={styles.contentArea}>
-          <div style={styles.contentInner}>
-            <div style={styles.textContent}>
-              {book.chapters[currentChapter] && formatChapterContent(book.chapters[currentChapter].content)}
+      <div style={styles.container}>
+        {/* Sidebar */}
+        <div style={styles.sidebar}>
+          {/* Header */}
+          <div style={styles.sidebarHeader}>
+            <div style={styles.bookTitle}>
+              <Book size={20} color="#64748b" />
+              <h1 style={styles.titleText}>{book.title}</h1>
             </div>
+            <p style={styles.authorText}>by {book.author}</p>
+            <p style={styles.chapterCount}>{book.totalChapters} chapters</p>
           </div>
-        </div>
 
-        {/* Bottom navigation */}
-        <div style={styles.bottomNav}>
-          <div style={styles.bottomNavInner}>
+          {/* Chapter list */}
+          <div style={styles.chapterList}>
+            {book.chapters.map((chapter, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentChapter(index)}
+                style={{
+                  ...styles.chapterButton,
+                  ...(currentChapter === index ? styles.chapterButtonActive : styles.chapterButtonInactive),
+                }}
+                onMouseEnter={(e) => {
+                  if (currentChapter !== index) {
+                    e.currentTarget.style.backgroundColor = '#f8fafc';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (currentChapter !== index) {
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                  }
+                }}
+              >
+                {chapter.title}
+              </button>
+            ))}
+          </div>
+
+          {/* Navigation controls */}
+          <div style={styles.navControls}>
             <button
               onClick={goToPrevChapter}
               disabled={currentChapter === 0}
               style={{
-                ...styles.bottomNavButton,
-                ...(currentChapter === 0 ? { opacity: 0.4, cursor: 'not-allowed' } : {})
+                ...styles.navButton,
+                ...(currentChapter === 0 ? styles.navButtonDisabled : {}),
               }}
             >
-              <ChevronLeft size={16} />
-              Previous Chapter
+              <ChevronLeft size={12} />
+              Prev
             </button>
-            
-            <div style={styles.pageInfo}>
-              {currentChapter + 1} / {book.totalChapters}
-            </div>
-            
             <button
               onClick={goToNextChapter}
               disabled={currentChapter === book.chapters.length - 1}
               style={{
-                ...styles.bottomNavButton,
-                ...(currentChapter === book.chapters.length - 1 ? { opacity: 0.4, cursor: 'not-allowed' } : {})
+                ...styles.navButton,
+                ...(currentChapter === book.chapters.length - 1 ? styles.navButtonDisabled : {}),
               }}
             >
-              Next Chapter
-              <ChevronRight size={16} />
+              Next
+              <ChevronRight size={12} />
             </button>
+          </div>
+        </div>
+
+        {/* Main content */}
+        <div style={styles.mainContent}>
+          {/* Chapter header */}
+          <div style={styles.chapterHeader}>
+            <h1 style={styles.chapterTitle}>
+              {book.chapters[currentChapter]?.title}
+            </h1>
+            <p style={styles.chapterInfo}>
+              Chapter {currentChapter + 1} of {book.totalChapters}
+            </p>
+          </div>
+
+          {/* Chapter content */}
+          <div style={styles.contentArea}>
+            <div style={styles.contentInner}>
+              <div style={styles.textContent}>
+                {book.chapters[currentChapter] && formatChapterContent(book.chapters[currentChapter].content)}
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom navigation */}
+          <div style={styles.bottomNav}>
+            <div style={styles.bottomNavInner}>
+              <button
+                onClick={goToPrevChapter}
+                disabled={currentChapter === 0}
+                style={{
+                  ...styles.bottomNavButton,
+                  ...(currentChapter === 0 ? { opacity: 0.4, cursor: 'not-allowed' } : {}),
+                }}
+              >
+                <ChevronLeft size={16} />
+                Previous Chapter
+              </button>
+
+              <div style={styles.pageInfo}>
+                {currentChapter + 1} / {book.totalChapters}
+              </div>
+
+              <button
+                onClick={goToNextChapter}
+                disabled={currentChapter === book.chapters.length - 1}
+                style={{
+                  ...styles.bottomNavButton,
+                  ...(currentChapter === book.chapters.length - 1 ? { opacity: 0.4, cursor: 'not-allowed' } : {}),
+                }}
+              >
+                Next Chapter
+                <ChevronRight size={16} />
+              </button>
+            </div>
           </div>
         </div>
       </div>

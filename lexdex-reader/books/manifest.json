@@ -1,0 +1,37 @@
+[
+  {
+    "key": "pride_prejudice",
+    "filename": "pride_prejudice.json",
+    "id": 1342,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen"
+  },
+  {
+    "key": "alice_wonderland",
+    "filename": "alice_wonderland.json",
+    "id": 11,
+    "title": "Alice in Wonderland",
+    "author": "Lewis Carroll"
+  },
+  {
+    "key": "frankenstein",
+    "filename": "frankenstein.json",
+    "id": 84,
+    "title": "Frankenstein",
+    "author": "Mary Shelley"
+  },
+  {
+    "key": "dracula",
+    "filename": "dracula.json",
+    "id": 345,
+    "title": "Dracula",
+    "author": "Bram Stoker"
+  },
+  {
+    "key": "great_gatsby",
+    "filename": "great_gatsby.json",
+    "id": 64317,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald"
+  }
+]
