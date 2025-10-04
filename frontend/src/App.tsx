@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
+import { Button } from "@/components/ui/button"
 import { Header } from "@/components/ui/header"
 import { Footer } from "@/components/ui/footer"
 import { ChaptersSidebar } from "@/components/ui/chapters-sidebar"
@@ -30,9 +31,31 @@ function App() {
     ]
   })
   const [selectedChapter, setSelectedChapter] = useState(0)
+  const [fontSize, setFontSize] = useState('base') // 'sm', 'base', 'lg', 'xl'
 
   const handleChapterSelect = (chapterIndex: number) => {
     setSelectedChapter(chapterIndex)
+  }
+
+  const getFontSizeClass = () => {
+    switch (fontSize) {
+      case 'sm': return 'text-sm'
+      case 'base': return 'text-base'
+      case 'lg': return 'text-lg'
+      case 'xl': return 'text-xl'
+      default: return 'text-base'
+    }
+  }
+
+  const adjustFontSize = (direction: 'up' | 'down') => {
+    const sizes = ['sm', 'base', 'lg', 'xl']
+    const currentIndex = sizes.indexOf(fontSize)
+    
+    if (direction === 'up' && currentIndex < sizes.length - 1) {
+      setFontSize(sizes[currentIndex + 1])
+    } else if (direction === 'down' && currentIndex > 0) {
+      setFontSize(sizes[currentIndex - 1])
+    }
   }
 
   return (
@@ -46,20 +69,32 @@ function App() {
         />
         
         <SidebarInset className="flex flex-col">
-          <Header>
+          <Header 
+            fontSize={fontSize} 
+            onFontSizeChange={adjustFontSize}
+          >
             <SidebarTrigger />
           </Header>
           <main className="flex-1 p-6">
               {selectedBook ? (
-                <div className="w-full max-w-none">
-                  <div>
+                <div className="w-full flex flex-col items-center">
+                  {/* Reading Content */}
+                  <div className="w-full max-w-3xl mx-auto">
                     {selectedBook.chapters[selectedChapter] ? (
                       <>
-                        <h2 className="text-2xl font-semibold mb-6 text-center">
+                        <h2 className="text-2xl font-semibold mb-8 text-center">
                           {selectedBook.chapters[selectedChapter].title}
                         </h2>
-                        <div className="whitespace-pre-wrap leading-relaxed text-base text-left">
-                          {selectedBook.chapters[selectedChapter].content}
+                        <div className={`
+                          whitespace-pre-wrap leading-loose text-left
+                          ${getFontSizeClass()}
+                          [&>p]:mb-6 [&_p+p]:mt-6
+                        `}>
+                          {selectedBook.chapters[selectedChapter].content.split('\n\n').map((paragraph, index) => (
+                            <p key={index} className="mb-6">
+                              {paragraph}
+                            </p>
+                          ))}
                         </div>
                       </>
                     ) : (
@@ -69,21 +104,24 @@ function App() {
                     )}
                   </div>
                   
-                  <div className="flex justify-between mt-8 pt-6 border-t">
-                    <button
+                  <div className="flex justify-between items-center mt-12 pt-8 border-t w-full">
+                    <Button
+                      variant="outline"
                       onClick={() => setSelectedChapter(Math.max(0, selectedChapter - 1))}
                       disabled={selectedChapter === 0}
-                      className="px-4 py-2 bg-primary text-primary-foreground rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="px-6 py-2"
                     >
                       Previous Chapter
-                    </button>
-                    <button
+                    </Button>
+                    <div className="flex-1"></div>
+                    <Button
+                      variant="outline"
                       onClick={() => setSelectedChapter(Math.min(selectedBook.chapters.length - 1, selectedChapter + 1))}
                       disabled={selectedChapter >= selectedBook.chapters.length - 1}
-                      className="px-4 py-2 bg-primary text-primary-foreground rounded-md disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="px-6 py-2"
                     >
                       Next Chapter
-                    </button>
+                    </Button>
                   </div>
                 </div>
               ) : (
