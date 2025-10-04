@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
+import { SidebarProvider, SidebarInset, SidebarTrigger, useSidebar } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/ui/header"
 import { Footer } from "@/components/ui/footer"
@@ -31,7 +31,8 @@ interface Manifest {
   books: BookManifestEntry[]
 }
 
-function App() {
+function AppContent() {
+  const { open: sidebarOpen } = useSidebar()
   const [availableBooks, setAvailableBooks] = useState<BookManifestEntry[]>([])
   const [selectedBook, setSelectedBook] = useState<Book | undefined>()
   const [selectedChapter, setSelectedChapter] = useState(0)
@@ -133,7 +134,6 @@ function App() {
   }
 
   return (
-    <SidebarProvider defaultOpen={true}>
       <div className="flex min-h-screen w-full">
         <ChaptersSidebar
           book={selectedBook}
@@ -156,7 +156,7 @@ function App() {
               {selectedBook ? (
                 <div className="w-full flex flex-col items-center px-8">
                   {/* Reading Content */}
-                  <div className="w-full max-w-5xl mx-auto ml-20">
+                  <div className={`w-full max-w-5xl mx-auto ${!sidebarOpen ? 'ml-32' : ''}`}>
                     {selectedBook.chapters[selectedChapter] ? (
                       <>
                         <h2 className="text-2xl font-semibold mb-8 mr-48 text-center">
@@ -223,6 +223,13 @@ function App() {
             <Footer />
           </SidebarInset>
       </div>
+  )
+}
+
+function App() {
+  return (
+    <SidebarProvider defaultOpen={true}>
+      <AppContent />
     </SidebarProvider>
   )
 }

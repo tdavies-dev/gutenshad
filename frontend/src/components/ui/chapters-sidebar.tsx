@@ -54,9 +54,9 @@ const ChaptersSidebar = ({
 }: ChaptersSidebarProps) => {
   const [searchTerm, setSearchTerm] = useState("")
 
-  const filteredChapters = book?.chapters?.filter(chapter =>
+  const filteredChapters = (book?.chapters?.filter(chapter =>
     chapter.title.toLowerCase().includes(searchTerm.toLowerCase())
-  ) || []
+  ) || []).sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: 'base' }))
 
   const filteredBooks = availableBooks.filter(bookEntry =>
     bookEntry.title.toLowerCase().includes(searchTerm.toLowerCase()) ||

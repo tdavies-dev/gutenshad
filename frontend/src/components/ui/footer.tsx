@@ -24,7 +24,7 @@ const Footer = ({ className }: FooterProps) => {
           tdavies-dev
         </a>
         <span className="text-sm text-muted-foreground">
-          <span className="text-foreground">// built with shadcn</span>
+          <span className="text-foreground"></span>
         </span>
       </div>
     </footer>
