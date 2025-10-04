@@ -1,0 +1,496 @@
+{
+  "total_books": 70,
+  "exported_at": "CURRENT_TIMESTAMP",
+  "books": [
+    {
+      "filename": "a_christmas_carol_in_prose_being_a_ghost_story_of_christmas_dickens_charles.json",
+      "book_id": 46,
+      "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+      "author": "Dickens, Charles",
+      "chapter_count": 1
+    },
+    {
+      "filename": "a_modest_proposal_for_preventing_the_children_of_poor_people_in_ireland_from_being_a_burden_on_their_swift_jonathan.json",
+      "book_id": 1080,
+      "title": "A Modest Proposal: For preventing the children of poor people in Ireland, from being a burden on their parents or country, and for making them beneficial to the publick",
+      "author": "Swift, Jonathan",
+      "chapter_count": 1
+    },
+    {
+      "filename": "a_room_with_a_view_forster_e_m_edward_morgan.json",
+      "book_id": 2641,
+      "title": "A Room with a View",
+      "author": "Forster, E. M. (Edward Morgan)",
+      "chapter_count": 22
+    },
+    {
+      "filename": "a_selection_from_the_works_of_frederick_locker_locker_lampson_frederick.json",
+      "book_id": 38463,
+      "title": "A Selection from the Works of Frederick Locker",
+      "author": "Locker-Lampson, Frederick",
+      "chapter_count": 6
+    },
+    {
+      "filename": "a_tale_of_two_cities_dickens_charles.json",
+      "book_id": 98,
+      "title": "A Tale of Two Cities",
+      "author": "Dickens, Charles",
+      "chapter_count": 48
+    },
+    {
+      "filename": "alices_adventures_in_wonderland_carroll_lewis.json",
+      "book_id": 11,
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Carroll, Lewis",
+      "chapter_count": 12
+    },
+    {
+      "filename": "anne_of_green_gables_montgomery_l_m_lucy_maud.json",
+      "book_id": 45,
+      "title": "Anne of Green Gables",
+      "author": "Montgomery, L. M. (Lucy Maud)",
+      "chapter_count": 39
+    },
+    {
+      "filename": "autobiography_of_benjamin_franklin_franklin_benjamin.json",
+      "book_id": 20203,
+      "title": "Autobiography of Benjamin Franklin",
+      "author": "Franklin, Benjamin",
+      "chapter_count": 29
+    },
+    {
+      "filename": "beyond_good_and_evil_nietzsche_friedrich_wilhelm.json",
+      "book_id": 4363,
+      "title": "Beyond Good and Evil",
+      "author": "Nietzsche, Friedrich Wilhelm",
+      "chapter_count": 299
+    },
+    {
+      "filename": "bleak_house_dickens_charles.json",
+      "book_id": 1023,
+      "title": "Bleak House",
+      "author": "Dickens, Charles",
+      "chapter_count": 49
+    },
+    {
+      "filename": "carmilla_le_fanu_joseph_sheridan.json",
+      "book_id": 10007,
+      "title": "Carmilla",
+      "author": "Le Fanu, Joseph Sheridan",
+      "chapter_count": 1
+    },
+    {
+      "filename": "dont_marry_or_advice_on_how_when_and_who_to_marry_donovan_james_w.json",
+      "book_id": 53368,
+      "title": "Don't Marry; or, Advice on How, When and Who to Marry",
+      "author": "Donovan, James W.",
+      "chapter_count": 6
+    },
+    {
+      "filename": "dracula_stoker_bram.json",
+      "book_id": 345,
+      "title": "Dracula",
+      "author": "Stoker, Bram",
+      "chapter_count": 28
+    },
+    {
+      "filename": "dubliners_joyce_james.json",
+      "book_id": 2814,
+      "title": "Dubliners",
+      "author": "Joyce, James",
+      "chapter_count": 1
+    },
+    {
+      "filename": "fables_of_la_fontaine_a_new_edition_with_notes_la_fontaine_jean_de.json",
+      "book_id": 7241,
+      "title": "Fables of La Fontaine — a New Edition, with Notes",
+      "author": "La Fontaine, Jean de",
+      "chapter_count": 247
+    },
+    {
+      "filename": "frankenstein_or_the_modern_prometheus_shelley_mary_wollstonecraft.json",
+      "book_id": 84,
+      "title": "Frankenstein; Or, The Modern Prometheus",
+      "author": "Shelley, Mary Wollstonecraft",
+      "chapter_count": 25
+    },
+    {
+      "filename": "golden_days_for_boys_and_girls_vol_xii_jan_3_1891_various.json",
+      "book_id": 17199,
+      "title": "Golden Days for Boys and Girls, Vol. XII, Jan. 3, 1891",
+      "author": "Various",
+      "chapter_count": 18
+    },
+    {
+      "filename": "great_expectations_dickens_charles.json",
+      "book_id": 1400,
+      "title": "Great Expectations",
+      "author": "Dickens, Charles",
+      "chapter_count": 50
+    },
+    {
+      "filename": "grimms_fairy_tales_grimm_jacob_grimm_wilhelm.json",
+      "book_id": 2591,
+      "title": "Grimms' Fairy Tales",
+      "author": "Grimm, Jacob, Grimm, Wilhelm",
+      "chapter_count": 4
+    },
+    {
+      "filename": "heart_of_darkness_conrad_joseph.json",
+      "book_id": 219,
+      "title": "Heart of Darkness",
+      "author": "Conrad, Joseph",
+      "chapter_count": 1
+    },
+    {
+      "filename": "history_of_tom_jones_a_foundling_fielding_henry.json",
+      "book_id": 6593,
+      "title": "History of Tom Jones, a Foundling",
+      "author": "Fielding, Henry",
+      "chapter_count": 336
+    },
+    {
+      "filename": "little_women_or_meg_jo_beth_and_amy_alcott_louisa_may.json",
+      "book_id": 37106,
+      "title": "Little Women; Or, Meg, Jo, Beth, and Amy",
+      "author": "Alcott, Louisa May",
+      "chapter_count": 41
+    },
+    {
+      "filename": "meditations_marcus_aurelius_emperor_of_rome.json",
+      "book_id": 2680,
+      "title": "Meditations",
+      "author": "Marcus Aurelius, Emperor of Rome",
+      "chapter_count": 379
+    },
+    {
+      "filename": "middlemarch_eliot_george.json",
+      "book_id": 145,
+      "title": "Middlemarch",
+      "author": "Eliot, George",
+      "chapter_count": 54
+    },
+    {
+      "filename": "moby_dick_or_the_whale_melville_herman.json",
+      "book_id": 2701,
+      "title": "Moby Dick; Or, The Whale",
+      "author": "Melville, Herman",
+      "chapter_count": 139
+    },
+    {
+      "filename": "narrative_of_the_life_of_frederick_douglass_an_american_slave_douglass_frederick.json",
+      "book_id": 23,
+      "title": "Narrative of the Life of Frederick Douglass, an American Slave",
+      "author": "Douglass, Frederick",
+      "chapter_count": 12
+    },
+    {
+      "filename": "oliver_twist_dickens_charles.json",
+      "book_id": 730,
+      "title": "Oliver Twist",
+      "author": "Dickens, Charles",
+      "chapter_count": 49
+    },
+    {
+      "filename": "on_liberty_mill_john_stuart.json",
+      "book_id": 34901,
+      "title": "On Liberty",
+      "author": "Mill, John Stuart",
+      "chapter_count": 10
+    },
+    {
+      "filename": "peter_pan_b_peter_and_wendy_barrie_j_m_james_matthew.json",
+      "book_id": 16,
+      "title": "Peter Pan : $b [Peter and Wendy]",
+      "author": "Barrie, J. M. (James Matthew)",
+      "chapter_count": 17
+    },
+    {
+      "filename": "poems_on_various_subjects_religious_and_moral_wheatley_phillis.json",
+      "book_id": 409,
+      "title": "Poems on various subjects, religious and moral",
+      "author": "Wheatley, Phillis",
+      "chapter_count": 25
+    },
+    {
+      "filename": "pride_and_prejudice_austen_jane.json",
+      "book_id": 1342,
+      "title": "Pride and Prejudice",
+      "author": "Austen, Jane",
+      "chapter_count": 49
+    },
+    {
+      "filename": "princess_puck_silberrad_una_l.json",
+      "book_id": 76967,
+      "title": "Princess Puck",
+      "author": "Silberrad, Una L.",
+      "chapter_count": 31
+    },
+    {
+      "filename": "rip_van_winkle_irving_washington.json",
+      "book_id": 60976,
+      "title": "Rip Van Winkle",
+      "author": "Irving, Washington",
+      "chapter_count": 2
+    },
+    {
+      "filename": "romeo_and_juliet_shakespeare_william.json",
+      "book_id": 1513,
+      "title": "Romeo and Juliet",
+      "author": "Shakespeare, William",
+      "chapter_count": 1
+    },
+    {
+      "filename": "sense_and_sensibility_austen_jane.json",
+      "book_id": 161,
+      "title": "Sense and Sensibility",
+      "author": "Austen, Jane",
+      "chapter_count": 50
+    },
+    {
+      "filename": "simple_sabotage_field_manual_united_states_office_of_strategic_services.json",
+      "book_id": 26184,
+      "title": "Simple Sabotage Field Manual",
+      "author": "United States. Office of Strategic Services",
+      "chapter_count": 5
+    },
+    {
+      "filename": "songs_of_innocence_and_of_experience_blake_william.json",
+      "book_id": 1934,
+      "title": "Songs of Innocence and of Experience",
+      "author": "Blake, William",
+      "chapter_count": 1
+    },
+    {
+      "filename": "spoon_river_anthology_masters_edgar_lee.json",
+      "book_id": 26471,
+      "title": "Spoon River Anthology",
+      "author": "Masters, Edgar Lee",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_adventures_of_roderick_random_smollett_t_tobias.json",
+      "book_id": 4085,
+      "title": "The Adventures of Roderick Random",
+      "author": "Smollett, T. (Tobias)",
+      "chapter_count": 50
+    },
+    {
+      "filename": "the_adventures_of_sherlock_holmes_doyle_arthur_conan.json",
+      "book_id": 1661,
+      "title": "The Adventures of Sherlock Holmes",
+      "author": "Doyle, Arthur Conan",
+      "chapter_count": 15
+    },
+    {
+      "filename": "the_blue_castle_a_novel_montgomery_l_m_lucy_maud.json",
+      "book_id": 67979,
+      "title": "The Blue Castle: a novel",
+      "author": "Montgomery, L. M. (Lucy Maud)",
+      "chapter_count": 46
+    },
+    {
+      "filename": "the_brothers_karamazov_dostoyevsky_fyodor.json",
+      "book_id": 28054,
+      "title": "The Brothers Karamazov",
+      "author": "Dostoyevsky, Fyodor",
+      "chapter_count": 109
+    },
+    {
+      "filename": "the_complete_works_of_william_shakespeare_shakespeare_william.json",
+      "book_id": 100,
+      "title": "The Complete Works of William Shakespeare",
+      "author": "Shakespeare, William",
+      "chapter_count": 6
+    },
+    {
+      "filename": "the_confessions_of_st_augustine_augustine_saint_bishop_of_hippo.json",
+      "book_id": 3296,
+      "title": "The Confessions of St. Augustine",
+      "author": "Augustine, Saint, Bishop of Hippo",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_ethics_of_aristotle_aristotle.json",
+      "book_id": 8438,
+      "title": "The Ethics of Aristotle",
+      "author": "Aristotle",
+      "chapter_count": 117
+    },
+    {
+      "filename": "the_expedition_of_humphry_clinker_smollett_t_tobias.json",
+      "book_id": 2160,
+      "title": "The Expedition of Humphry Clinker",
+      "author": "Smollett, T. (Tobias)",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_iliad_homer.json",
+      "book_id": 6130,
+      "title": "The Iliad",
+      "author": "Homer",
+      "chapter_count": 5
+    },
+    {
+      "filename": "the_importance_of_being_earnest_a_trivial_comedy_for_serious_people_wilde_oscar.json",
+      "book_id": 844,
+      "title": "The Importance of Being Earnest: A Trivial Comedy for Serious People",
+      "author": "Wilde, Oscar",
+      "chapter_count": 2
+    },
+    {
+      "filename": "the_interesting_narrative_of_the_life_of_olaudah_equiano_or_gustavus_vassa_the_african_written_by_hi_equiano_olaudah.json",
+      "book_id": 15399,
+      "title": "The Interesting Narrative of the Life of Olaudah Equiano, Or Gustavus Vassa, The African: Written By Himself",
+      "author": "Equiano, Olaudah",
+      "chapter_count": 3
+    },
+    {
+      "filename": "the_kama_sutra_of_vatsyayana_translated_from_the_sanscrit_in_seven_parts_with_preface_introduction_a_vatsyayana.json",
+      "book_id": 27827,
+      "title": "The Kama Sutra of Vatsyayana: Translated From the Sanscrit in Seven Parts With Preface, Introduction and Concluding Remarks",
+      "author": "Vatsyayana",
+      "chapter_count": 51
+    },
+    {
+      "filename": "the_odyssey_rendered_into_english_prose_for_the_use_of_those_who_cannot_read_the_original_homer.json",
+      "book_id": 1727,
+      "title": "The Odyssey: Rendered into English prose for the use of those who cannot read the original",
+      "author": "Homer",
+      "chapter_count": 4
+    },
+    {
+      "filename": "the_prince_machiavelli_niccolò.json",
+      "book_id": 1232,
+      "title": "The Prince",
+      "author": "Machiavelli, Niccolò",
+      "chapter_count": 27
+    },
+    {
+      "filename": "the_republic_plato.json",
+      "book_id": 1497,
+      "title": "The Republic",
+      "author": "Plato",
+      "chapter_count": 23
+    },
+    {
+      "filename": "the_romance_of_lust_a_classic_victorian_erotic_novel_anonymous.json",
+      "book_id": 30254,
+      "title": "The Romance of Lust: A classic Victorian erotic novel",
+      "author": "Anonymous",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_scarlet_letter_hawthorne_nathaniel.json",
+      "book_id": 25344,
+      "title": "The Scarlet Letter",
+      "author": "Hawthorne, Nathaniel",
+      "chapter_count": 25
+    },
+    {
+      "filename": "the_souls_of_black_folk_du_bois_w_e_b_william_edward_burghardt.json",
+      "book_id": 408,
+      "title": "The Souls of Black Folk",
+      "author": "Du Bois, W. E. B. (William Edward Burghardt)",
+      "chapter_count": 15
+    },
+    {
+      "filename": "the_spectator_volumes_1_2_and_3_with_translations_and_index_for_the_series_steele_richard_sir_addison_joseph.json",
+      "book_id": 12030,
+      "title": "The Spectator, Volumes 1, 2 and 3: With Translations and Index for the Series",
+      "author": "Steele, Richard, Sir, Addison, Joseph",
+      "chapter_count": 666
+    },
+    {
+      "filename": "the_strange_case_of_dr_jekyll_and_mr_hyde_stevenson_robert_louis.json",
+      "book_id": 43,
+      "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "author": "Stevenson, Robert Louis",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_tragical_history_of_doctor_faustus_from_the_quarto_of_1604_marlowe_christopher.json",
+      "book_id": 779,
+      "title": "The Tragical History of Doctor Faustus: From the Quarto of 1604",
+      "author": "Marlowe, Christopher",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_wonderful_wizard_of_oz_baum_l_frank_lyman_frank.json",
+      "book_id": 55,
+      "title": "The Wonderful Wizard of Oz",
+      "author": "Baum, L. Frank (Lyman Frank)",
+      "chapter_count": 25
+    },
+    {
+      "filename": "the_works_of_edgar_allan_poe_volume_2_poe_edgar_allan.json",
+      "book_id": 2148,
+      "title": "The Works of Edgar Allan Poe — Volume 2",
+      "author": "Poe, Edgar Allan",
+      "chapter_count": 6
+    },
+    {
+      "filename": "the_yellow_wallpaper_gilman_charlotte_perkins.json",
+      "book_id": 1952,
+      "title": "The Yellow Wallpaper",
+      "author": "Gilman, Charlotte Perkins",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_divine_comedy_dante_alighieri.json",
+      "book_id": 8800,
+      "title": "The divine comedy",
+      "author": "Dante Alighieri",
+      "chapter_count": 1
+    },
+    {
+      "filename": "the_phantom_public_lippmann_walter.json",
+      "book_id": 76966,
+      "title": "The phantom public",
+      "author": "Lippmann, Walter",
+      "chapter_count": 5
+    },
+    {
+      "filename": "treasure_island_stevenson_robert_louis.json",
+      "book_id": 120,
+      "title": "Treasure Island",
+      "author": "Stevenson, Robert Louis",
+      "chapter_count": 11
+    },
+    {
+      "filename": "twenty_years_after_dumas_alexandre_maquet_auguste.json",
+      "book_id": 1259,
+      "title": "Twenty years after",
+      "author": "Dumas, Alexandre, Maquet, Auguste",
+      "chapter_count": 51
+    },
+    {
+      "filename": "ulysses_joyce_james.json",
+      "book_id": 4300,
+      "title": "Ulysses",
+      "author": "Joyce, James",
+      "chapter_count": 4
+    },
+    {
+      "filename": "walden_and_on_the_duty_of_civil_disobedience_thoreau_henry_david.json",
+      "book_id": 205,
+      "title": "Walden, and On The Duty Of Civil Disobedience",
+      "author": "Thoreau, Henry David",
+      "chapter_count": 1
+    },
+    {
+      "filename": "war_and_peace_tolstoy_leo_graf.json",
+      "book_id": 2600,
+      "title": "War and Peace",
+      "author": "Tolstoy, Leo, graf",
+      "chapter_count": 382
+    },
+    {
+      "filename": "white_nights_and_other_stories_the_novels_of_fyodor_dostoevsky_volume_x_dostoyevsky_fyodor.json",
+      "book_id": 36034,
+      "title": "White Nights and Other Stories: The Novels of Fyodor Dostoevsky, Volume X",
+      "author": "Dostoyevsky, Fyodor",
+      "chapter_count": 1
+    }
+  ]
+}
