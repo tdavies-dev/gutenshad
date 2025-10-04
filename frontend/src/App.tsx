@@ -51,19 +51,14 @@ function App() {
           </Header>
           <main className="flex-1 p-6">
               {selectedBook ? (
-                <div className="max-w-4xl mx-auto">
-                  <div className="mb-8">
-                    <h1 className="text-3xl font-bold mb-2">{selectedBook.title}</h1>
-                    <p className="text-lg text-muted-foreground">by {selectedBook.author}</p>
-                  </div>
-                  
-                  <div className="prose prose-lg max-w-none">
+                <div className="w-full max-w-none">
+                  <div>
                     {selectedBook.chapters[selectedChapter] ? (
                       <>
-                        <h2 className="text-2xl font-semibold mb-4">
+                        <h2 className="text-2xl font-semibold mb-6 text-center">
                           {selectedBook.chapters[selectedChapter].title}
                         </h2>
-                        <div className="whitespace-pre-wrap leading-relaxed">
+                        <div className="whitespace-pre-wrap leading-relaxed text-base text-left">
                           {selectedBook.chapters[selectedChapter].content}
                         </div>
                       </>
