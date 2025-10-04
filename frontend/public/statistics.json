@@ -1,0 +1,571 @@
+{
+  "summary": {
+    "total_books": 70,
+    "total_chapters": 3746,
+    "total_words": 8532770,
+    "avg_chapters_per_book": 53.51,
+    "avg_words_per_book": 121896.71
+  },
+  "books": [
+    {
+      "book_id": 12030,
+      "title": "The Spectator, Volumes 1, 2 and 3: With Translations and Index for the Series",
+      "author": "Steele, Richard, Sir, Addison, Joseph",
+      "chapter_count": 666,
+      "total_words": 947529,
+      "avg_words_per_chapter": 1422.72
+    },
+    {
+      "book_id": 100,
+      "title": "The Complete Works of William Shakespeare",
+      "author": "Shakespeare, William",
+      "chapter_count": 6,
+      "total_words": 589328,
+      "avg_words_per_chapter": 98221.33
+    },
+    {
+      "book_id": 2600,
+      "title": "War and Peace",
+      "author": "Tolstoy, Leo, graf",
+      "chapter_count": 382,
+      "total_words": 561816,
+      "avg_words_per_chapter": 1470.72
+    },
+    {
+      "book_id": 1023,
+      "title": "Bleak House",
+      "author": "Dickens, Charles",
+      "chapter_count": 49,
+      "total_words": 352298,
+      "avg_words_per_chapter": 7189.76
+    },
+    {
+      "book_id": 28054,
+      "title": "The Brothers Karamazov",
+      "author": "Dostoyevsky, Fyodor",
+      "chapter_count": 109,
+      "total_words": 350041,
+      "avg_words_per_chapter": 3211.39
+    },
+    {
+      "book_id": 6593,
+      "title": "History of Tom Jones, a Foundling",
+      "author": "Fielding, Henry",
+      "chapter_count": 336,
+      "total_words": 347827,
+      "avg_words_per_chapter": 1035.2
+    },
+    {
+      "book_id": 145,
+      "title": "Middlemarch",
+      "author": "Eliot, George",
+      "chapter_count": 54,
+      "total_words": 316152,
+      "avg_words_per_chapter": 5854.67
+    },
+    {
+      "book_id": 1259,
+      "title": "Twenty years after",
+      "author": "Dumas, Alexandre, Maquet, Auguste",
+      "chapter_count": 51,
+      "total_words": 241473,
+      "avg_words_per_chapter": 4734.76
+    },
+    {
+      "book_id": 2701,
+      "title": "Moby Dick; Or, The Whale",
+      "author": "Melville, Herman",
+      "chapter_count": 139,
+      "total_words": 211476,
+      "avg_words_per_chapter": 1521.41
+    },
+    {
+      "book_id": 1497,
+      "title": "The Republic",
+      "author": "Plato",
+      "chapter_count": 23,
+      "total_words": 205981,
+      "avg_words_per_chapter": 8955.7
+    },
+    {
+      "book_id": 37106,
+      "title": "Little Women; Or, Meg, Jo, Beth, and Amy",
+      "author": "Alcott, Louisa May",
+      "chapter_count": 41,
+      "total_words": 192137,
+      "avg_words_per_chapter": 4686.27
+    },
+    {
+      "book_id": 4085,
+      "title": "The Adventures of Roderick Random",
+      "author": "Smollett, T. (Tobias)",
+      "chapter_count": 50,
+      "total_words": 190380,
+      "avg_words_per_chapter": 3807.6
+    },
+    {
+      "book_id": 30254,
+      "title": "The Romance of Lust: A classic Victorian erotic novel",
+      "author": "Anonymous",
+      "chapter_count": 1,
+      "total_words": 188899,
+      "avg_words_per_chapter": 188899.0
+    },
+    {
+      "book_id": 1400,
+      "title": "Great Expectations",
+      "author": "Dickens, Charles",
+      "chapter_count": 50,
+      "total_words": 184273,
+      "avg_words_per_chapter": 3685.46
+    },
+    {
+      "book_id": 345,
+      "title": "Dracula",
+      "author": "Stoker, Bram",
+      "chapter_count": 28,
+      "total_words": 161074,
+      "avg_words_per_chapter": 5752.64
+    },
+    {
+      "book_id": 730,
+      "title": "Oliver Twist",
+      "author": "Dickens, Charles",
+      "chapter_count": 49,
+      "total_words": 157077,
+      "avg_words_per_chapter": 3205.65
+    },
+    {
+      "book_id": 4300,
+      "title": "Ulysses",
+      "author": "Joyce, James",
+      "chapter_count": 4,
+      "total_words": 155394,
+      "avg_words_per_chapter": 38848.5
+    },
+    {
+      "book_id": 2160,
+      "title": "The Expedition of Humphry Clinker",
+      "author": "Smollett, T. (Tobias)",
+      "chapter_count": 1,
+      "total_words": 148355,
+      "avg_words_per_chapter": 148355.0
+    },
+    {
+      "book_id": 98,
+      "title": "A Tale of Two Cities",
+      "author": "Dickens, Charles",
+      "chapter_count": 48,
+      "total_words": 135568,
+      "avg_words_per_chapter": 2824.33
+    },
+    {
+      "book_id": 1727,
+      "title": "The Odyssey: Rendered into English prose for the use of those who cannot read the original",
+      "author": "Homer",
+      "chapter_count": 4,
+      "total_words": 127392,
+      "avg_words_per_chapter": 31848.0
+    },
+    {
+      "book_id": 1342,
+      "title": "Pride and Prejudice",
+      "author": "Austen, Jane",
+      "chapter_count": 49,
+      "total_words": 122313,
+      "avg_words_per_chapter": 2496.18
+    },
+    {
+      "book_id": 36034,
+      "title": "White Nights and Other Stories: The Novels of Fyodor Dostoevsky, Volume X",
+      "author": "Dostoyevsky, Fyodor",
+      "chapter_count": 1,
+      "total_words": 118691,
+      "avg_words_per_chapter": 118691.0
+    },
+    {
+      "book_id": 161,
+      "title": "Sense and Sensibility",
+      "author": "Austen, Jane",
+      "chapter_count": 50,
+      "total_words": 118655,
+      "avg_words_per_chapter": 2373.1
+    },
+    {
+      "book_id": 76967,
+      "title": "Princess Puck",
+      "author": "Silberrad, Una L.",
+      "chapter_count": 31,
+      "total_words": 116297,
+      "avg_words_per_chapter": 3751.52
+    },
+    {
+      "book_id": 205,
+      "title": "Walden, and On The Duty Of Civil Disobedience",
+      "author": "Thoreau, Henry David",
+      "chapter_count": 1,
+      "total_words": 115783,
+      "avg_words_per_chapter": 115783.0
+    },
+    {
+      "book_id": 3296,
+      "title": "The Confessions of St. Augustine",
+      "author": "Augustine, Saint, Bishop of Hippo",
+      "chapter_count": 1,
+      "total_words": 111821,
+      "avg_words_per_chapter": 111821.0
+    },
+    {
+      "book_id": 8800,
+      "title": "The divine comedy",
+      "author": "Dante Alighieri",
+      "chapter_count": 1,
+      "total_words": 108629,
+      "avg_words_per_chapter": 108629.0
+    },
+    {
+      "book_id": 8438,
+      "title": "The Ethics of Aristotle",
+      "author": "Aristotle",
+      "chapter_count": 117,
+      "total_words": 104651,
+      "avg_words_per_chapter": 894.45
+    },
+    {
+      "book_id": 1661,
+      "title": "The Adventures of Sherlock Holmes",
+      "author": "Doyle, Arthur Conan",
+      "chapter_count": 15,
+      "total_words": 104346,
+      "avg_words_per_chapter": 6956.4
+    },
+    {
+      "book_id": 45,
+      "title": "Anne of Green Gables",
+      "author": "Montgomery, L. M. (Lucy Maud)",
+      "chapter_count": 39,
+      "total_words": 101968,
+      "avg_words_per_chapter": 2614.56
+    },
+    {
+      "book_id": 2591,
+      "title": "Grimms' Fairy Tales",
+      "author": "Grimm, Jacob, Grimm, Wilhelm",
+      "chapter_count": 4,
+      "total_words": 100971,
+      "avg_words_per_chapter": 25242.75
+    },
+    {
+      "book_id": 7241,
+      "title": "Fables of La Fontaine — a New Edition, with Notes",
+      "author": "La Fontaine, Jean de",
+      "chapter_count": 247,
+      "total_words": 83873,
+      "avg_words_per_chapter": 339.57
+    },
+    {
+      "book_id": 25344,
+      "title": "The Scarlet Letter",
+      "author": "Hawthorne, Nathaniel",
+      "chapter_count": 25,
+      "total_words": 83344,
+      "avg_words_per_chapter": 3333.76
+    },
+    {
+      "book_id": 84,
+      "title": "Frankenstein; Or, The Modern Prometheus",
+      "author": "Shelley, Mary Wollstonecraft",
+      "chapter_count": 25,
+      "total_words": 74927,
+      "avg_words_per_chapter": 2997.08
+    },
+    {
+      "book_id": 15399,
+      "title": "The Interesting Narrative of the Life of Olaudah Equiano, Or Gustavus Vassa, The African: Written By Himself",
+      "author": "Equiano, Olaudah",
+      "chapter_count": 3,
+      "total_words": 74586,
+      "avg_words_per_chapter": 24862.0
+    },
+    {
+      "book_id": 20203,
+      "title": "Autobiography of Benjamin Franklin",
+      "author": "Franklin, Benjamin",
+      "chapter_count": 29,
+      "total_words": 71547,
+      "avg_words_per_chapter": 2467.14
+    },
+    {
+      "book_id": 408,
+      "title": "The Souls of Black Folk",
+      "author": "Du Bois, W. E. B. (William Edward Burghardt)",
+      "chapter_count": 15,
+      "total_words": 68510,
+      "avg_words_per_chapter": 4567.33
+    },
+    {
+      "book_id": 67979,
+      "title": "The Blue Castle: a novel",
+      "author": "Montgomery, L. M. (Lucy Maud)",
+      "chapter_count": 46,
+      "total_words": 68077,
+      "avg_words_per_chapter": 1479.93
+    },
+    {
+      "book_id": 120,
+      "title": "Treasure Island",
+      "author": "Stevenson, Robert Louis",
+      "chapter_count": 11,
+      "total_words": 67964,
+      "avg_words_per_chapter": 6178.55
+    },
+    {
+      "book_id": 2814,
+      "title": "Dubliners",
+      "author": "Joyce, James",
+      "chapter_count": 1,
+      "total_words": 67559,
+      "avg_words_per_chapter": 67559.0
+    },
+    {
+      "book_id": 2641,
+      "title": "A Room with a View",
+      "author": "Forster, E. M. (Edward Morgan)",
+      "chapter_count": 22,
+      "total_words": 66388,
+      "avg_words_per_chapter": 3017.64
+    },
+    {
+      "book_id": 2680,
+      "title": "Meditations",
+      "author": "Marcus Aurelius, Emperor of Rome",
+      "chapter_count": 379,
+      "total_words": 61547,
+      "avg_words_per_chapter": 162.39
+    },
+    {
+      "book_id": 2148,
+      "title": "The Works of Edgar Allan Poe — Volume 2",
+      "author": "Poe, Edgar Allan",
+      "chapter_count": 6,
+      "total_words": 58206,
+      "avg_words_per_chapter": 9701.0
+    },
+    {
+      "book_id": 4363,
+      "title": "Beyond Good and Evil",
+      "author": "Nietzsche, Friedrich Wilhelm",
+      "chapter_count": 299,
+      "total_words": 58119,
+      "avg_words_per_chapter": 194.38
+    },
+    {
+      "book_id": 27827,
+      "title": "The Kama Sutra of Vatsyayana: Translated From the Sanscrit in Seven Parts With Preface, Introduction and Concluding Remarks",
+      "author": "Vatsyayana",
+      "chapter_count": 51,
+      "total_words": 56991,
+      "avg_words_per_chapter": 1117.47
+    },
+    {
+      "book_id": 1232,
+      "title": "The Prince",
+      "author": "Machiavelli, Niccolò",
+      "chapter_count": 27,
+      "total_words": 49555,
+      "avg_words_per_chapter": 1835.37
+    },
+    {
+      "book_id": 34901,
+      "title": "On Liberty",
+      "author": "Mill, John Stuart",
+      "chapter_count": 10,
+      "total_words": 47835,
+      "avg_words_per_chapter": 4783.5
+    },
+    {
+      "book_id": 16,
+      "title": "Peter Pan : $b [Peter and Wendy]",
+      "author": "Barrie, J. M. (James Matthew)",
+      "chapter_count": 17,
+      "total_words": 47078,
+      "avg_words_per_chapter": 2769.29
+    },
+    {
+      "book_id": 23,
+      "title": "Narrative of the Life of Frederick Douglass, an American Slave",
+      "author": "Douglass, Frederick",
+      "chapter_count": 12,
+      "total_words": 40619,
+      "avg_words_per_chapter": 3384.92
+    },
+    {
+      "book_id": 55,
+      "title": "The Wonderful Wizard of Oz",
+      "author": "Baum, L. Frank (Lyman Frank)",
+      "chapter_count": 25,
+      "total_words": 39413,
+      "avg_words_per_chapter": 1576.52
+    },
+    {
+      "book_id": 219,
+      "title": "Heart of Darkness",
+      "author": "Conrad, Joseph",
+      "chapter_count": 1,
+      "total_words": 37917,
+      "avg_words_per_chapter": 37917.0
+    },
+    {
+      "book_id": 76966,
+      "title": "The phantom public",
+      "author": "Lippmann, Walter",
+      "chapter_count": 5,
+      "total_words": 30253,
+      "avg_words_per_chapter": 6050.6
+    },
+    {
+      "book_id": 17199,
+      "title": "Golden Days for Boys and Girls, Vol. XII, Jan. 3, 1891",
+      "author": "Various",
+      "chapter_count": 18,
+      "total_words": 29990,
+      "avg_words_per_chapter": 1666.11
+    },
+    {
+      "book_id": 46,
+      "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas",
+      "author": "Dickens, Charles",
+      "chapter_count": 1,
+      "total_words": 28541,
+      "avg_words_per_chapter": 28541.0
+    },
+    {
+      "book_id": 10007,
+      "title": "Carmilla",
+      "author": "Le Fanu, Joseph Sheridan",
+      "chapter_count": 1,
+      "total_words": 28026,
+      "avg_words_per_chapter": 28026.0
+    },
+    {
+      "book_id": 11,
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Carroll, Lewis",
+      "chapter_count": 12,
+      "total_words": 26417,
+      "avg_words_per_chapter": 2201.42
+    },
+    {
+      "book_id": 1513,
+      "title": "Romeo and Juliet",
+      "author": "Shakespeare, William",
+      "chapter_count": 1,
+      "total_words": 25958,
+      "avg_words_per_chapter": 25958.0
+    },
+    {
+      "book_id": 43,
+      "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+      "author": "Stevenson, Robert Louis",
+      "chapter_count": 1,
+      "total_words": 25629,
+      "avg_words_per_chapter": 25629.0
+    },
+    {
+      "book_id": 38463,
+      "title": "A Selection from the Works of Frederick Locker",
+      "author": "Locker-Lampson, Frederick",
+      "chapter_count": 6,
+      "total_words": 19792,
+      "avg_words_per_chapter": 3298.67
+    },
+    {
+      "book_id": 779,
+      "title": "The Tragical History of Doctor Faustus: From the Quarto of 1604",
+      "author": "Marlowe, Christopher",
+      "chapter_count": 1,
+      "total_words": 19716,
+      "avg_words_per_chapter": 19716.0
+    },
+    {
+      "book_id": 6130,
+      "title": "The Iliad",
+      "author": "Homer",
+      "chapter_count": 5,
+      "total_words": 16048,
+      "avg_words_per_chapter": 3209.6
+    },
+    {
+      "book_id": 844,
+      "title": "The Importance of Being Earnest: A Trivial Comedy for Serious People",
+      "author": "Wilde, Oscar",
+      "chapter_count": 2,
+      "total_words": 15349,
+      "avg_words_per_chapter": 7674.5
+    },
+    {
+      "book_id": 53368,
+      "title": "Don't Marry; or, Advice on How, When and Who to Marry",
+      "author": "Donovan, James W.",
+      "chapter_count": 6,
+      "total_words": 13267,
+      "avg_words_per_chapter": 2211.17
+    },
+    {
+      "book_id": 26184,
+      "title": "Simple Sabotage Field Manual",
+      "author": "United States. Office of Strategic Services",
+      "chapter_count": 5,
+      "total_words": 8949,
+      "avg_words_per_chapter": 1789.8
+    },
+    {
+      "book_id": 60976,
+      "title": "Rip Van Winkle",
+      "author": "Irving, Washington",
+      "chapter_count": 2,
+      "total_words": 8139,
+      "avg_words_per_chapter": 4069.5
+    },
+    {
+      "book_id": 1952,
+      "title": "The Yellow Wallpaper",
+      "author": "Gilman, Charlotte Perkins",
+      "chapter_count": 1,
+      "total_words": 6085,
+      "avg_words_per_chapter": 6085.0
+    },
+    {
+      "book_id": 409,
+      "title": "Poems on various subjects, religious and moral",
+      "author": "Wheatley, Phillis",
+      "chapter_count": 25,
+      "total_words": 5589,
+      "avg_words_per_chapter": 223.56
+    },
+    {
+      "book_id": 1934,
+      "title": "Songs of Innocence and of Experience",
+      "author": "Blake, William",
+      "chapter_count": 1,
+      "total_words": 5539,
+      "avg_words_per_chapter": 5539.0
+    },
+    {
+      "book_id": 1080,
+      "title": "A Modest Proposal: For preventing the children of poor people in Ireland, from being a burden on their parents or country, and for making them beneficial to the publick",
+      "author": "Swift, Jonathan",
+      "chapter_count": 1,
+      "total_words": 3420,
+      "avg_words_per_chapter": 3420.0
+    },
+    {
+      "book_id": 26471,
+      "title": "Spoon River Anthology",
+      "author": "Masters, Edgar Lee",
+      "chapter_count": 1,
+      "total_words": 3413,
+      "avg_words_per_chapter": 3413.0
+    }
+  ]
+}
