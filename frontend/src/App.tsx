@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { Header } from "@/components/ui/header"
@@ -18,23 +18,97 @@ interface Book {
   chapters: Chapter[]
 }
 
+interface BookManifestEntry {
+  filename: string
+  book_id: number
+  title: string
+  author: string
+  chapter_count: number
+}
+
+interface Manifest {
+  total_books: number
+  books: BookManifestEntry[]
+}
+
 function App() {
-  const [selectedBook] = useState<Book>({
-    id: 1,
-    title: "Sample Classic Novel",
-    author: "Demo Author",
-    chapters: [
-      { title: "Chapter 1: The Beginning", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\n\nUt aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
-      { title: "Chapter 2: The Journey", content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.\n\nDoloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo." },
-      { title: "Chapter 3: The Discovery", content: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.\n\nNeque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit." },
-      { title: "Chapter 4: The Revelation", content: "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis.\n\nSuscipit laboriosam, nisi ut aliquid ex ea commodi consequatur." }
-    ]
-  })
+  const [availableBooks, setAvailableBooks] = useState<BookManifestEntry[]>([])
+  const [selectedBook, setSelectedBook] = useState<Book | undefined>()
   const [selectedChapter, setSelectedChapter] = useState(0)
   const [fontSize, setFontSize] = useState('base') // 'sm', 'base', 'lg', 'xl'
+  const [loading, setLoading] = useState(false)
+
+  // Load manifest on startup
+  useEffect(() => {
+    loadManifest()
+  }, [])
+
+  const loadManifest = async () => {
+    try {
+      console.log('Loading manifest...')
+      const response = await fetch('/manifest.json')
+      if (!response.ok) {
+        throw new Error(`Failed to load manifest: ${response.status}`)
+      }
+      const manifest: Manifest = await response.json()
+      setAvailableBooks(manifest.books)
+      console.log(`Loaded ${manifest.books.length} books from manifest`)
+    } catch (error) {
+      console.error('Error loading manifest:', error)
+      // Fallback to sample data if manifest fails
+      setAvailableBooks([{
+        filename: 'sample_book.json',
+        book_id: 1,
+        title: 'Sample Classic Novel',
+        author: 'Demo Author',
+        chapter_count: 4
+      }])
+    }
+  }
+
+  const loadBook = async (manifestEntry: BookManifestEntry) => {
+    setLoading(true)
+    try {
+      console.log(`Loading book: ${manifestEntry.title}`)
+      const response = await fetch(`/${manifestEntry.filename}`)
+      if (!response.ok) {
+        throw new Error(`Failed to load book: ${response.status}`)
+      }
+      const book: Book = await response.json()
+      setSelectedBook(book)
+      setSelectedChapter(0) // Reset to first chapter
+      console.log(`Loaded book with ${book.chapters.length} chapters`)
+    } catch (error) {
+      console.error('Error loading book:', error)
+      // Create fallback book data
+      const fallbackBook: Book = {
+        id: manifestEntry.book_id,
+        title: manifestEntry.title,
+        author: manifestEntry.author,
+        chapters: [{
+          title: "Chapter 1",
+          content: "This book could not be loaded. Please check the console for errors."
+        }]
+      }
+      setSelectedBook(fallbackBook)
+      setSelectedChapter(0)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const handleChapterSelect = (chapterIndex: number) => {
     setSelectedChapter(chapterIndex)
+  }
+
+  const handleBookSelect = (manifestEntry: BookManifestEntry | undefined) => {
+    if (manifestEntry) {
+      loadBook(manifestEntry)
+    } else {
+      // Back to book list
+      setSelectedBook(undefined)
+      setSelectedChapter(0)
+    }
   }
 
   const getFontSizeClass = () => {
@@ -63,8 +137,11 @@ function App() {
       <div className="flex min-h-screen w-full">
         <ChaptersSidebar
           book={selectedBook}
+          availableBooks={availableBooks}
           selectedChapter={selectedChapter}
           onChapterSelect={handleChapterSelect}
+          onBookSelect={handleBookSelect}
+          loading={loading}
           className="w-64"
         />
         
@@ -77,12 +154,12 @@ function App() {
           </Header>
           <main className="flex-1 p-6">
               {selectedBook ? (
-                <div className="w-full flex flex-col items-center">
+                <div className="w-full flex flex-col items-center px-8">
                   {/* Reading Content */}
-                  <div className="w-full max-w-3xl mx-auto">
+                  <div className="w-full max-w-5xl mx-auto ml-20">
                     {selectedBook.chapters[selectedChapter] ? (
                       <>
-                        <h2 className="text-2xl font-semibold mb-8 text-center">
+                        <h2 className="text-2xl font-semibold mb-8 mr-48 text-center">
                           {selectedBook.chapters[selectedChapter].title}
                         </h2>
                         <div className={`
@@ -91,7 +168,7 @@ function App() {
                           [&>p]:mb-6 [&_p+p]:mt-6
                         `}>
                           {selectedBook.chapters[selectedChapter].content.split('\n\n').map((paragraph, index) => (
-                            <p key={index} className="mb-6">
+                            <p key={index} className="mb-6 ml-50 max-w-12xl">
                               {paragraph}
                             </p>
                           ))}
@@ -129,7 +206,15 @@ function App() {
                   <div className="text-center">
                     <h2 className="text-2xl font-semibold mb-2">Welcome to Gutenshad</h2>
                     <p className="text-muted-foreground">A nice reader for the Gutenberg 100</p>
-                    <p className="text-sm text-muted-foreground mt-4">Loading books...</p>
+                    {availableBooks.length > 0 ? (
+                      <p className="text-sm text-muted-foreground mt-4">
+                        Select a book from the sidebar to start reading
+                      </p>
+                    ) : (
+                      <p className="text-sm text-muted-foreground mt-4">
+                        Loading books...
+                      </p>
+                    )}
                   </div>
                 </div>
               )}
