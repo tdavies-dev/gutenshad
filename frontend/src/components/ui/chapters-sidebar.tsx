@@ -85,6 +85,7 @@ const ChaptersSidebar = ({
           placeholder={book ? "Search chapters..." : "Search books..."}
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          autoFocus={false}
         />
       </SidebarHeader>
       

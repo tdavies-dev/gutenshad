@@ -3,6 +3,7 @@ import { Sun, Moon, Minus, Plus, Type } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { useIsMobile } from "@/hooks/use-mobile"
 
 interface HeaderProps {
   className?: string
@@ -13,6 +14,7 @@ interface HeaderProps {
 
 const Header = ({ className, children, fontSize = 'base', onFontSizeChange }: HeaderProps) => {
   const [isDark, setIsDark] = useState(false)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const theme = localStorage.getItem('theme')
@@ -47,8 +49,11 @@ const Header = ({ className, children, fontSize = 'base', onFontSizeChange }: He
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           {children}
-          <h1 className="text-2xl font-bold tracking-tight">
-            gutenshad <span className="text-muted-foreground font-normal">// a nice reader for the gutenberg 100</span>
+          <h1 className={cn(
+            "font-bold tracking-tight",
+            isMobile ? "text-sm" : "text-2xl"
+          )}>
+            gutenshad {!isMobile && <span className="text-muted-foreground font-normal">// a nice reader for the gutenberg 100</span>}
           </h1>
         </div>
         

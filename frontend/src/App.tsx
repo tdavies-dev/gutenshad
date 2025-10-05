@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Header } from "@/components/ui/header"
 import { Footer } from "@/components/ui/footer"
 import { ChaptersSidebar } from "@/components/ui/chapters-sidebar"
+import { ReadingPane } from "@/components/ui/readingpane"
 import './App.css'
 
 interface Chapter {
@@ -112,16 +113,6 @@ function AppContent() {
     }
   }
 
-  const getFontSizeClass = () => {
-    switch (fontSize) {
-      case 'sm': return 'text-sm'
-      case 'base': return 'text-base'
-      case 'lg': return 'text-lg'
-      case 'xl': return 'text-xl'
-      default: return 'text-base'
-    }
-  }
-
   const adjustFontSize = (direction: 'up' | 'down') => {
     const sizes = ['sm', 'base', 'lg', 'xl']
     const currentIndex = sizes.indexOf(fontSize)
@@ -156,31 +147,18 @@ function AppContent() {
               {selectedBook ? (
                 <div className="w-full flex flex-col items-center px-8">
                   {/* Reading Content */}
-                  <div className={`w-full max-w-5xl mx-auto ${!sidebarOpen ? 'ml-32' : ''}`}>
-                    {selectedBook.chapters[selectedChapter] ? (
-                      <>
-                        <h2 className="text-2xl font-semibold mb-8 mr-48 text-center">
-                          {selectedBook.chapters[selectedChapter].title}
-                        </h2>
-                        <div className={`
-                          whitespace-pre-wrap leading-loose text-left
-                          ${getFontSizeClass()}
-                          [&>p]:mb-6 [&_p+p]:mt-6
-                        `}>
-                          {selectedBook.chapters[selectedChapter].content.split('\n\n').map((paragraph, index) => (
-                            <p key={index} className="mb-6 ml-50 max-w-12xl">
-                              {paragraph}
-                            </p>
-                          ))}
-                        </div>
-                      </>
-                    ) : (
-                      <div className="flex items-center justify-center h-64">
-                        <p className="text-muted-foreground">Chapter not found</p>
-                      </div>
-                    )}
-                  </div>
-                  
+                  {selectedBook.chapters[selectedChapter] ? (
+                    <ReadingPane
+                      chapter={selectedBook.chapters[selectedChapter]}
+                      fontSize={fontSize}
+                      sidebarOpen={sidebarOpen}
+                    />
+                  ) : (
+                    <div className="flex items-center justify-center h-64">
+                      <p className="text-muted-foreground">Chapter not found</p>
+                    </div>
+                  )}
+
                   <div className="flex justify-between items-center mt-12 pt-8 border-t w-full">
                     <Button
                       variant="outline"
@@ -204,11 +182,11 @@ function AppContent() {
               ) : (
                 <div className="flex items-center justify-center h-64">
                   <div className="text-center">
-                    <h2 className="text-2xl font-semibold mb-2">Welcome to Gutenshad</h2>
-                    <p className="text-muted-foreground">A nice reader for the Gutenberg 100</p>
+                    <h2 className="text-2xl font-semibold mb-2">gutenshad</h2>
+                    <p className="text-muted-foreground">a nice reader for project gutenberg's top 100 books</p>
                     {availableBooks.length > 0 ? (
                       <p className="text-sm text-muted-foreground mt-4">
-                        Select a book from the sidebar to start reading
+                        pick a book from the sidebar to start reading...
                       </p>
                     ) : (
                       <p className="text-sm text-muted-foreground mt-4">
