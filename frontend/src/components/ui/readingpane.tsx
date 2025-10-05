@@ -22,7 +22,9 @@ const getFontSizeClass = (fontSize: string) => {
 }
 
 export function ReadingPane({ chapter, fontSize, sidebarOpen }: ReadingPaneProps) {
-  const isMobile = useIsMobile()
+  const isMobile = useIsMobile() 
+
+  
 
   return (
     <div className={`w-full max-w-3xl mx-auto ${!sidebarOpen && !isMobile ? 'ml-48' : ''}`}>
